@@ -86,3 +86,8 @@ $('#userOnline').on('click','li',function()
             });
         });
 });
+const IS_IOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+if (IS_IOS) {
+    document.documentElement.classList.add('ios');
+}
